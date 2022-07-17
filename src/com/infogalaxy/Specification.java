@@ -57,7 +57,7 @@ public class Specification {
     }
 
     public String toString(){
-        return "Laptop{"+
+        return "Laptop Specification{"+
                 "Processor : "+processor +'\''+
                 ",Generation : "+ generation +'\''+
                 ",Ram : " + ram +'\''+
