@@ -61,10 +61,10 @@ public class Specification {
                 "Processor : "+processor +'\''+
                 ",Generation : "+ generation +'\''+
                 ",Ram : " + ram +'\''+
-                ",Hard disk HHD: "+ hhd+'\''+
-                ",Solid state Drive SSD "+hhd+'\''+
-                ",Screen Size"+screensize+'\''+
-                "Keyboard"+keyboard+'\''+
+                ",HSD: "+ hhd+'\''+
+                ",SSD "+ssd+'\''+
+                ",Screen Size : "+screensize+'\''+
+                "Keyboard : "+keyboard+'\''+
                 '}';
     }
 }
