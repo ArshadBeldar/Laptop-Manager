@@ -10,61 +10,73 @@ public class Specification {
     private String screensize;
     private String keyboard;
 
-    public String getProcessor(){
+    public String getProcessor() {
         return this.processor;
     }
-    public String getGeneration(){
+
+    public String getGeneration() {
         return this.generation;
     }
-    public String getRam(){
+
+    public String getRam() {
         return this.ram;
     }
-    public String getHhd(){
+
+    public String getHhd() {
         return this.hhd;
     }
-    public String getSsd(){
+
+    public String getSsd() {
         return this.ssd;
     }
-    public String getScreensize(){
+
+    public String getScreensize() {
         return this.screensize;
     }
-    public String getKeyboard(){
+
+    public String getKeyboard() {
         return this.keyboard;
     }
 
-            //  Setter method....
+    //  Setter method....
 
-    public void setProcessor(String processor){
+    public void setProcessor(String processor) {
         this.processor = processor;
     }
-    public void setGeneration(String generation){
+
+    public void setGeneration(String generation) {
         this.generation = generation;
     }
-    public void setRam(String ram){
+
+    public void setRam(String ram) {
         this.ram = ram;
     }
-    public void setHhd(String hhd){
+
+    public void setHhd(String hhd) {
         this.hhd = hhd;
     }
-    public void setSsd(String ssd){
+
+    public void setSsd(String ssd) {
         this.ssd = ssd;
     }
-    public void setScreensize (String screensize){
+
+    public void setScreensize(String screensize) {
         this.screensize = screensize;
     }
-    public void setKeyboard (String keyboard){
+
+    public void setKeyboard(String keyboard) {
         this.keyboard = keyboard;
     }
 
-    public String toString(){
-        return "Laptop Specification{"+
-                "Processor : "+processor +'\''+
-                ",Generation : "+ generation +'\''+
-                ",Ram : " + ram +'\''+
-                ",HSD: "+ hhd+'\''+
-                ",SSD "+ssd+'\''+
-                ",Screen Size : "+screensize+'\''+
-                "Keyboard : "+keyboard+'\''+
+    public String toString() {
+        return "Laptop Specification{" +
+                "Processor : " + processor + '\'' +
+                ",Generation : " + generation + '\'' +
+                ",Ram : " + ram + '\'' +
+                ",HSD: " + hhd + '\'' +
+                ",SSD " + ssd + '\'' +
+                ",Screen Size : " + screensize + '\'' +
+                "Keyboard : " + keyboard + '\'' +
                 '}';
     }
 }

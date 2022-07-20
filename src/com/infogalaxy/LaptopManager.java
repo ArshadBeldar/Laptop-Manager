@@ -1,17 +1,31 @@
-import com.infogalaxy.Specification;
+package com.infogalaxy;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LaptopManager {
+    String Comp;
     static Scanner scanner = new Scanner(System.in);
     ArrayList<LaptopInfo> laptopInfoArrayList = new ArrayList<>();
 
     LaptopInfo laptopInfo = new LaptopInfo();
 
     public void setLaptopInfo() {
+
+
         LaptopInfo laptopInfo = new LaptopInfo();
 
+        System.out.println("Enter the Laptop Company name");
+        String setname = scanner.next();
+        if (setname.equalsIgnoreCase(Comp)){
+            laptopInfo.setCompanyName(setname);
+
+        }
+        else {
+            System.out.println("\t\tWrong Company name Try Again!!!! ");
+            setLaptopInfo();
+        }
         System.out.println("Enter the Laptop series Number");
         laptopInfo.setSeriesNo(scanner.next());
 
@@ -50,11 +64,11 @@ public class LaptopManager {
 
     public void displayLaptopInfo() {
         LaptopInfo laptopInfo = new LaptopInfo();
-        for (int i = 0;i<laptopInfoArrayList.size();i++){
+        for (int i = 0; i < laptopInfoArrayList.size(); i++) {
 
             laptopInfo = laptopInfoArrayList.get(i);
             int srno = i;
-            System.out.println(srno+1+") ***** SHOWING THE LAPTOP INFORMATION ******");
+            System.out.println(srno + 1 + ") ***** SHOWING THE LAPTOP INFORMATION ******");
             System.out.println(laptopInfo.toString());
             System.out.println(laptopInfo.specification.toString());
             System.out.println("");
@@ -63,13 +77,13 @@ public class LaptopManager {
 
     }
 
-    public static void main(String[] args) {
+    public void laptopManu(LaptopManager laptopManager,String companyName1) {
+        Comp = companyName1;
         int choice;
-        LaptopManager laptopManager = new LaptopManager();
 
         do {
-            System.out.println("WELCOME TO LAPTOP MANAGER");
-            System.out.println("1: Laptop Information / 2: Show Laptop Information / 3: Exit:");
+            System.out.println("------WELCOME TO LAPTOP MANAGER------");
+            System.out.println("1: ADD LAPTOP INFORMATION / 2: SHOW LAPTOP INFORMATION / 3: EXIT..:");
             System.out.println("ENTER THE CHOICE NUMBER");
             choice = scanner.nextInt();
             switch (choice) {

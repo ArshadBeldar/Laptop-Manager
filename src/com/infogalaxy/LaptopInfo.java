@@ -1,30 +1,43 @@
+package com.infogalaxy;
+
 import com.infogalaxy.Specification;
 
 public class LaptopInfo {
 
     Specification specification = new Specification();
+    private String companyName;
     private String seriesNo;
     private String modelNo;
     private String price;
     private String launchyear;
 
     // getter Method...
+    public String getCompanyName(){
+        return this.companyName;
+    }
 
-    public String getSeriesNo(){
+    public String getSeriesNo() {
         return this.seriesNo;
     }
-    public String getModelNo(){
+
+    public String getModelNo() {
         return this.modelNo;
     }
-    public String getPrice(){
-        return  this.price;
+
+    public String getPrice() {
+        return this.price;
     }
-    public String getLaunchyear(){
+
+    public String getLaunchyear() {
         return this.launchyear;
     }
 
     //     Setter Method...
-    public void setSeriesNo(String seriesNo){
+
+    public void setCompanyName(String companyName){
+        this.companyName = companyName;
+    }
+    public void setSeriesNo(String seriesNo) {
         this.seriesNo = seriesNo;
     }
 
@@ -42,11 +55,11 @@ public class LaptopInfo {
 
     @Override
     public String toString() {
-        return "Laptop Info{"+
-                "serialNo : "+seriesNo +'\''+
-                ",ModelNo : "+ modelNo +'\''+
-                ",Price : " + price +'\''+
-                ",Launch Year: "+ launchyear+'\''+
+        return "Laptop Info{" +
+                "serialNo : " + seriesNo + '\'' +
+                ",ModelNo : " + modelNo + '\'' +
+                ",Price : " + price + '\'' +
+                ",Launch Year: " + launchyear + '\'' +
                 '}';
     }
 }
